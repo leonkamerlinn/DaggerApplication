@@ -1,0 +1,14 @@
+package com.example.leon.daggerapplication;
+
+
+import com.example.leon.daggerapplication.di.component.DaggerApplicationComponent;
+
+import dagger.android.AndroidInjector;
+import dagger.android.support.DaggerApplication;
+
+public class MainApplication extends DaggerApplication {
+    @Override
+    protected AndroidInjector<? extends DaggerApplication> applicationInjector() {
+        return DaggerApplicationComponent.builder().application(this).build();
+    }
+}

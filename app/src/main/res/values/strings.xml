@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DaggerApplication</string>
+    <string name="shared_prefrences">com.example.leon.daggerapplication.sharedprefrences</string>
+</resources>
